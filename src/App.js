@@ -1,12 +1,16 @@
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Heros from "./Pages/Heros";
+import Footer from "./Pages/Footer";
 
 const App=()=> {
     return (
       <>
         <Router>
           <Navbar />
+          <Heros />
+          <Footer/>
           <Routes>
             <Route exact path="/" />
             <Route
